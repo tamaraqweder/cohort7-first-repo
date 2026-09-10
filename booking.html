@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Npw</title>
+</head>
+<body>
+
+    <header>
+                <h1>Booking for istanbul now</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home" target="_blank"> Home</a>
+                </li>
+                <li>
+                    <a href="#destination" target="_blank"> Destination</a>
+                </li>
+                <li>
+                    <a href="#travelinfo"  target="_blank">Travel info</a>
+                </li>
+                <li>
+                    <a href="booking.html" target="_blank">Book now</a>
+                </li>
+            </ul>
+                
+        </nav>
+
+        
+    </header>
+
+
+    <main>
+        <form action="" method="get"  autocomplete="on">
+            <fieldset>
+                <legend>Fill your Information</legend>
+                  <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name"  name="name" placeholder="input your name" required >
+                  </div>
+                  <br>
+                  <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="input your email" required>
+                  </div>
+                  <br>
+
+                  <div>
+
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="password" placeholder="input your password" required >
+                  </div>
+                  <br>
+
+                  <div>
+                <label for="phone">Number:</label  >
+                <input type="tel" id="phone" name="number"  placeholder="input your phone number" required>
+                  </div>
+                  <br>
+
+                  <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"  placeholder="input your date of birth" required>
+                  </div>
+
+
+                  <input type="submit">
+    <button type="reset">Clear</button>
+
+
+
+             </fieldset>
+        </form>
+
+        <hr>
+
+
+
+
+
+
+
+
+
+        <form action=" " method="get" autocomplete="on">
+            <fieldset>
+                <legend>fill Information of your trip </legend>
+
+                <label for="dc">Departure City:</label>
+                <input type="text" name="dc" id="dc"  size="50"  required>
+                <br>
+                <br>
+
+                <label for="dest" >Destination:</label>
+                <select id="dest" name="destination" required>
+                    <optgroup label="Europe">
+                        <option value="paris">paris</option>
+                        <option value="rome">rome</option>
+                        <option value="london">london</option>
+
+                    </optgroup>
+
+
+                    <optgroup label="middle-east">
+                        <option value="jordan">jordan</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Saudi-Arabia">Saudi-Arabia</option>
+
+                    </optgroup>
+
+                    <optgroup label="Asia">
+                        <option value="china">china</option>
+                        <option value="korea">Korea</option>
+                        <option value="japan">japan</option>
+
+                    </optgroup>
+
+                    
+
+                </select>
+
+                <div>
+
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" name="date" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="numb">Number of Travelers</label>
+                <input type="number" id="numb" name="num" min="2" max="6" required>
+                </div>
+
+                <br>
+                <div>
+                    <p>choose your travel class :</p>
+                    <label for="eco">Economy</label>
+                    <input type="radio" id="eco" name="class" readonly  >
+
+                      <label for="bus">Business</label>
+                    <input type="radio" id="bus" name="class" readonly>
+
+
+                      <label for="fisrt">First Class </label>
+                    <input type="radio" id="dirst" name="class" readonly>
+                </div>
+                <br>
+
+                <p>check the other services you want :</p>
+
+                <div>
+
+                    <label for="airport">Airport Transfer</label>
+                    <input type="checkbox" id="airport" name="services"  value="Airport-Transfer">
+
+                </div>
+                <br>
+
+                <div>
+
+                    <label for="hotel">Hotel Reservation</label>
+                    <input type="checkbox" id="hotel" name="services"  value="hotel-reservation">
+
+                </div>
+                <br>
+
+
+                <div>
+
+                    <label for="insurance">Travel Insurance</label>
+                    <input type="checkbox" id="insurance" name="services"  value="travel-insurance" >
+ 
+                </div>
+                <br>
+
+
+                <div>
+
+                 <label for="tour">Guided Tour</label>                   
+                  <input type="checkbox" id="tour" name="services" value="guided-tour">
+
+                </div>
+                <br>
+
+
+
+            </fieldset>
+
+        
+    
+
+
+    <br>
+    <hr>
+
+
+    
+        <div>
+         <textarea placeholder="write your message" rows="10" cols="50" maxlength="1000"></textarea>
+        </div>
+        <br>
+       <div>
+            <label for="fil">select file to upload: </label>
+             <input type="file" id="fil" name="file" multiple required>
+    </div>
+
+
+    <br>
+
+    <div>
+
+        <label for="package">Preferred Package:</label> 
+        <input type="search" id="package" name="package" list="trip-options" placeholder="Search for a trip package" required>
+         <datalist id="trip-options"> <option value="Istanbul City Tour">
+             <option value="Bosphorus Cruise">
+             <option value="Historical Istanbul Tour">
+                 <option value="Istanbul Food Tour"> </datalist>
+        
+    </div>
+
+    <div>
+        <label for="discount">Promotional Discount:</label>
+<input type="text" id="discount" value="10%" disabled>
+    </div>
+
+
+
+    <input type="submit">
+    <button type="reset">Clear</button>
+    <button type="reset">Reset</button>
+
+        </form>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+ <footer>
+    <p>© 2026 Istanbul Travel Guide. All rights reserved.</p>
+    <p>Contact us: info@istanbultravel.com</p>
+    <p>Explore Istanbul and enjoy your trip!</p>
+</footer>
+
+    </footer>
+        
+    
+
+
+</body>
+</html>
